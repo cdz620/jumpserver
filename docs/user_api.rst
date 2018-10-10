@@ -17,7 +17,7 @@ API 文档
 ::
 
     $ curl -X POST -H 'Content-Type: application/json' -d '{"username": "admin", "password": "admin"}' http://localhost/api/users/v1/token/  # 获取token
-    {"Token":"937b38011acf499eb474e2fecb424ab3","KeyWord":"Bearer"}%  # 获取到的token
+    {"Token":"937b38011acf499eb474e2fecb424ab3","Keyword":"Bearer"}%  # 获取到的token
 
     $ curl -H 'Authorization: Bearer 937b38011acf499eb474e2fecb424ab3' -H "Content-Type:application/json" http://localhost/api/users/v1/users/
     # 使用token访问，token有效期 1小时
